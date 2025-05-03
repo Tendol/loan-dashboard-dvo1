@@ -1,0 +1,48 @@
+{
+  "name": "dv01",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^5.24.9",
+    "papaparse": "^4.6.3",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-scripts": "^5.0.1",
+    "recharts": "^1.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "@babel/preset-react": "^7.27.1",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^12.8.3",
+    "babel-jest": "^29.7.0",
+    "jest": "^27.5.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  }
+}
