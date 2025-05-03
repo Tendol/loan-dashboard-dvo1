@@ -25,8 +25,8 @@ A React application that visualizes loan data by grade using an interactive **ba
 ---
 
 ## ⌛ Time taken to complete the challenge 
-May 2nd - 10:30 pm to 1am
-May 3rd - 1 pm - 2 pm and 10pm - 12 am 
+- May 2nd - 10:30 pm to 1am
+- May 3rd - 1 pm - 2 pm and 10pm - 12 am 
 
 Total - approximately five and half hours
 
