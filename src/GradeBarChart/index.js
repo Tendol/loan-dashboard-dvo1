@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   BarChart,
   Bar,
@@ -8,11 +8,11 @@ import {
   ResponsiveContainer,
   CartesianGrid,
   Cell,
-} from 'recharts';
-import { Card } from 'antd';
-import createGradeColorMap from '../helpers/createGradeColorMap';
-import LoanDataContext from '../LoanDataContext';
-import useGradeAggregatedBalance from '../hooks/useGradeAggregatedBalance';
+} from "recharts";
+import { Card } from "antd";
+import createGradeColorMap from "../helpers/createGradeColorMap";
+import LoanDataContext from "../LoanDataContext";
+import useGradeAggregatedBalance from "../hooks/useGradeAggregatedBalance";
 
 const GradeBarChart = () => {
   const { filteredData: data } = React.useContext(LoanDataContext);
@@ -23,27 +23,33 @@ const GradeBarChart = () => {
 
   return (
     <Card title="Grade Balance Chart">
-      <div style={{ width: '100%', height: 300, margin: '10px' }}>
+      <div style={{ width: "100%", height: 300, margin: "10px" }}>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
             data={chartData}
             data-testid="BarChart"
-            margin={{ top: 20, right: 30, left: 20, bottom: 40 }}
+            margin={{ top: 20, right: 30, left: 60, bottom: 40 }}
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis
               dataKey="grade"
               data-testid="XAxis"
-              label={{ value: 'Grade', position: 'insideBottom', offset: -5 }}
+              label={{ value: "Grade", position: "insideBottom", offset: -5 }}
             />
             <YAxis
               data-testid="YAxis"
               label={{
-                value: 'Total Balance',
+                value: "Total Balance",
                 angle: -90,
-                position: 'insideLeft',
-                offset: -15,
+                position: "insideLeft",
+                offset: -30,
+                style: { textAnchor: "middle" },
               }}
+              tickFormatter={(value) =>
+                `$${Number(value).toLocaleString(undefined, {
+                  minimumFractionDigits: 0,
+                })}`
+              }
             />
             <Tooltip
               formatter={(value) =>
