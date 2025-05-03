@@ -45,8 +45,8 @@ npm start
 ```
 
 ### 4. 🧪 Running Tests
-# To run all tests using Jest and React Testing Library:
 
 ```bash
 npm test
+# To run all tests using Jest and React Testing Library:
 ```
