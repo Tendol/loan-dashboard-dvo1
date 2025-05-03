@@ -31,21 +31,22 @@ A React application that visualizes loan data by grade using an interactive **ba
 ```bash
 git clone https://github.com/your-username/loan-dashboard.git
 cd loan-dashboard
+```
 
 ### 2. Install dependencies
 
 ```bash
 npm install
-
 # Make sure you have Node.js (>=14.x) and npm installed.
-
+```
 ### 3. Start the development server
 ```bash
 npm start
-
+```
 
 ### 4. 🧪 Running Tests
 # To run all tests using Jest and React Testing Library:
 
 ```bash
 npm test
+```
